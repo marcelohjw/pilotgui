@@ -1,5 +1,7 @@
 import PySimpleGUI as sg
 
-name = sg.popup_get_text('What is your name?')
+hours = sg.popup_get_text('Quantas horas você estudou hoje?')
 
-sg.popup('Hi ' + name)
+resu = int(hours) * 10
+
+sg.popup_annoying(str(resu))
